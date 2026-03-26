@@ -1,0 +1,99 @@
+.home-page {
+  padding-bottom: var(--space-16);
+}
+
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-12);
+  margin-top: calc(-1 * var(--space-16));
+  background: 
+    linear-gradient(to right, rgba(5,5,5,1) 0%, rgba(5,5,5,0.4) 50%, rgba(5,5,5,0) 100%),
+    linear-gradient(to top, rgba(5,5,5,1) 0%, rgba(5,5,5,0) 20%),
+    url('/neon.png') center/cover no-repeat;
+  background-color: #111;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+  margin-top: var(--space-16);
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: rgba(255, 26, 26, 0.2);
+  color: var(--color-primary);
+  padding: var(--space-1) var(--space-3);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-4);
+  border: 1px solid rgba(255, 26, 26, 0.3);
+}
+
+.hero-title {
+  font-size: 5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+  background: linear-gradient(180deg, #fff 0%, #aaa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 30px rgba(0,255,255,0.4));
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: var(--space-8);
+  max-width: 500px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.carousel-section {
+  padding: var(--space-8) var(--space-12);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-4);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary-glow);
+}
+
+.movie-carousel {
+  display: flex;
+  gap: var(--space-6);
+  overflow-x: auto;
+  padding-bottom: var(--space-4);
+  padding-top: var(--space-2);
+}
+
+.movie-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+.movie-carousel::-webkit-scrollbar-thumb {
+  background: #333;
+}

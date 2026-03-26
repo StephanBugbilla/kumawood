@@ -1,0 +1,10 @@
+/* App Specific global alignments or wrapper could go here */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+}
